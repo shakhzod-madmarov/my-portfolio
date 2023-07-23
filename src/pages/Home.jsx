@@ -2,6 +2,8 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import GithubIcon from "@material-ui/icons/GitHub";
 
+import { CertificateList } from "../helpers/CertificateList";
+
 import "../styles/Home.css";
 
 function Home() {
@@ -38,11 +40,32 @@ function Home() {
       </section>
       <section className="skills">
         <h2> Skills</h2>
-        <h2> Front-End</h2>
         <p>
           HTML, CSS, SASS, BootStrap, GIT, NPM, Yarn, JavaScript, ReactJS,
           Redux, TypeScript.
         </p>
+      </section>
+      <section className="certificates-section">
+        <h2>Certificates</h2>
+        <div className="certificates">
+          {CertificateList.map((certificate, index) => (
+            <div key={index} className="certificate">
+              <h3 className="givenBy">{certificate.givenBy}</h3>
+              <p className="certifName">{certificate.certifName}</p>
+              <a
+                href={certificate.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={certificate.certifImage}
+                  alt={certificate.certifName}
+                  className="certifImage"
+                />
+              </a>
+            </div>
+          ))}
+        </div>
       </section>
     </main>
   );

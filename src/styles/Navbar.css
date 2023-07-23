@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  height: 100px;
+  height: 80px;
   background: #393646;
 }
 
@@ -37,6 +37,7 @@
 .toggleButton svg {
   font-size: 50px;
 }
+
 .toggleButton button {
   margin-right: 20px;
   background-color: transparent;
