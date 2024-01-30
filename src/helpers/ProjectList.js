@@ -4,6 +4,9 @@ import Proj3 from "../assets/proj3.png";
 import Proj4 from "../assets/proj4.jpg";
 import Proj5 from "../assets/proj5.png";
 import Proj6 from "../assets/proj6.png";
+import Proj7 from "../assets/proj7.png";
+import Proj8 from "../assets/proj8.png";
+import Proj9 from "../assets/proj9.png";
 
 export const ProjectList = [
   {
@@ -41,5 +44,23 @@ export const ProjectList = [
     image: Proj6,
     skills: "Html, Css, Javascript",
     link: "https://github.com/shakhzod-madmarov/Foods/tree/main/Foods",
+  },
+  {
+    name: "r2",
+    image: Proj7,
+    skills: "Html, Css, Javascript",
+    link: "https://github.com/shakhzod-madmarov/r2-adobe",
+  },
+  {
+    name: "New Look",
+    image: Proj8,
+    skills: "Html, Css, Javascript",
+    link: "https://github.com/shakhzod-madmarov/start-newlook",
+  },
+  {
+    name: "Medol",
+    image: Proj9,
+    skills: "ReactJS, JSX, React-Carousel, HTML, CSS",
+    link: "https://github.com/shakhzod-madmarov/medol",
   },
 ];
